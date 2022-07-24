@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 
-// If you sele
+// If you select the same letter, in the same position there is a bug occurs. adding && deepEquals(Object[], Object[] comparison can solve the problem).
 
 public class Main {
     private static Card[][] cards = new Card[4][4];
