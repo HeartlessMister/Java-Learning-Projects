@@ -6,19 +6,19 @@ public class Login {
     public boolean login(Account account) {
 
         Scanner scanner = new Scanner(System.in);
-        String kullanıcı_adi;
-        String parola;
+        String userName;
+        String password;
 
-        System.out.println("Lütfen kullanıcı adınızı giriniz");
+        System.out.println("Please enter your username: ");
         kullanıcı_adi = scanner.nextLine();
-        System.out.println("Lütfen parolanızı giriniz");
+        System.out.println("Please enter your password: ");
         parola = scanner.nextLine();
 
-        if (account.getKullanici_adi().equals(kullanıcı_adi) && account.getParola().equals(parola)) {
+        if (account.gerUserName().equals(userName) && account.getPassword().equals(password)) {
             return (true);
         } else {
 
-            System.out.println("Kullanıcı adınız veya şifreniz hatalıdır ama hangisi söylemem.");
+            System.out.println("Your password or username is wrong but I won't say which one.");
             return (false);
 
         }
