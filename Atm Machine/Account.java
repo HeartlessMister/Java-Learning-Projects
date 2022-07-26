@@ -2,23 +2,23 @@ package com.company;
 
 public class Account {
 
-    private String kullanici_adi;
+    private String userName;
     private String parola;
     private double bakiye;
 
-    public Account(String kullanici_adi, String parola, int bakiye) {
-        this.kullanici_adi = kullanici_adi;
+    public Account(String userName, String parola, int bakiye) {
+        this.kullanici_adi = userName;
         this.parola = parola;
         this.bakiye = bakiye;
     }
 
 
-    public String getKullanici_adi() {
-        return kullanici_adi;
+    public String getuserName() {
+        return userName;
     }
 
-    public void setKullanici_adi(String kullanici_adi) {
-        this.kullanici_adi = kullanici_adi;
+    public void setKullanici_adi(String userName) {
+        this.kullanici_adi = userName;
     }
 
     public String getParola() {
