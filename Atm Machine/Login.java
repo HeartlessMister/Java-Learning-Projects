@@ -10,11 +10,11 @@ public class Login {
         String password;
 
         System.out.println("Please enter your username: ");
-        kullanıcı_adi = scanner.nextLine();
+        userName = scanner.nextLine();
         System.out.println("Please enter your password: ");
-        parola = scanner.nextLine();
+        password = scanner.nextLine();
 
-        if (account.gerUserName().equals(userName) && account.getPassword().equals(password)) {
+        if (account.getUserName().equals(userName) && account.getPassword().equals(password)) {
             return (true);
         } else {
 
