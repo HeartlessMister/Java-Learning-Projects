@@ -44,13 +44,13 @@ public class Atm {
         double amount;
         while (true) {
 
-            System.out.println(islemler);
+            System.out.println(operations);
             Scanner scanner = new Scanner(System.in);
 
             String operation = scanner.nextLine();
 
             if (operation.equals("1")) {
-                System.out.println("Bakiyeniz:" + account.getBakiye());
+                System.out.println("Your balance: " + account.getBalance());
             } else if (operation.equals("2")) {
 
                 System.out.println("Enter the amount that you want to deposit: ");
@@ -67,7 +67,7 @@ public class Atm {
 
                 account.withdraw(amount);
 
-            } else if (islem.equals("q")) {
+            } else if (operation.equals("q")) {
 
                 break;
 
