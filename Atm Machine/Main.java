@@ -11,7 +11,7 @@ public class Main {
 
         atm.work(yunus);
 
-        System.out.println("Programdan Cikiliyor...");
+        System.out.println("You are exiting the program");
 
 
     }
