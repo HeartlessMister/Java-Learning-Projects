@@ -3,51 +3,51 @@ package com.company;
 public class Account {
 
     private String userName;
-    private String parola;
-    private double bakiye;
+    private String password;
+    private double balance;
 
-    public Account(String userName, String parola, int bakiye) {
-        this.kullanici_adi = userName;
-        this.parola = parola;
-        this.bakiye = bakiye;
+    public Account(String userName, String password, int balance) {
+        this.userName = userName;
+        this.password = password;
+        this.balance = balance;
     }
 
 
-    public String getuserName() {
+    public String getUserName() {
         return userName;
     }
 
-    public void setKullanici_adi(String userName) {
-        this.kullanici_adi = userName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getParola() {
-        return parola;
+    public String getPassword() {
+        return password;
     }
 
-    public void setParola(String parola) {
-        this.parola = parola;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public double getBakiye() {
-        return bakiye;
+    public double getBalance() {
+        return balance;
     }
 
-    public void setBakiye(double bakiye) {
-        this.bakiye = bakiye;
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
-    public void paraYatirma(double tutar) {
-        this.bakiye += tutar;
-        System.out.println("Yeni Bakiye"+ this.bakiye);
+    public void deposit(double amount) {
+        this.balance += amount;
+        System.out.println("New balance: "+ this.balance);
     }
 
-    public void paraCekme(double tutar) {
-        if (this.bakiye < tutar) {
-            System.out.println("Yetersiz Bakiye");
+    public void withdraw(double amount) {
+        if (this.balance < amount) {
+            System.out.println("Insufficient balance");
         } else {
-            this.bakiye -= tutar;
-            System.out.println("Yeni Bakiye" + this.bakiye);
+            this.balance -= amount;
+            System.out.println("New balance: " + this.balance);
         }
     }
 }
