@@ -14,7 +14,7 @@ public class Atm {
         System.out.println("Welcome to our ATM");
         System.out.println("*******************");
 
-        int girisHakki = 3;
+        int enterenceRight = 3;
 
         while (true) {
 
@@ -25,10 +25,10 @@ public class Atm {
             } else {
 
                 System.out.println("Welcome to our system");
-                girisHakki--;
+                enterenceRight--;
 
-                if (girisHakki == 0) {
-                    System.out.println("Şifrenizi 3 kere yanlış girdiniz, işleminiz sonlandırılıyor...");
+                if (enterenceRight == 0) {
+                    System.out.println("You have made three failed enterance attemt... Your account suspended for five miniutes!");
                     return;
                 }
             }
@@ -36,36 +36,36 @@ public class Atm {
 
         System.out.println("***********************");
 
-        String islemler = "1. Bakiye goruntule\n" +
-                "2. Para Yatirma\n" +
-                "3. Para Cekme\n" +
-                "Cikis icin q'ya basiniz";
+        String operations = "1. Show balance\n" +
+                "2. Deposit\n" +
+                "3. Withdraw\n" +
+                "Press q in order to exit";
 
-
+        double amount;
         while (true) {
 
             System.out.println(islemler);
             Scanner scanner = new Scanner(System.in);
 
-            String islem = scanner.nextLine();
+            String operation = scanner.nextLine();
 
-            if (islem.equals("1")) {
+            if (operation.equals("1")) {
                 System.out.println("Bakiyeniz:" + account.getBakiye());
-            } else if (islem.equals("2")) {
+            } else if (operation.equals("2")) {
 
-                System.out.println("Yatırmak istediğiniz miktarı giriniz:");
+                System.out.println("Enter the amount that you want to deposit: ");
 
-                double tutar = scanner.nextDouble();
+                amount = scanner.nextDouble();
 
-                account.paraYatirma(tutar);
+                account.deposit(amount);
 
-            } else if (islem.equals("3")) {
+            } else if (operation.equals("3")) {
 
-                System.out.println("Çekmek istediğiniz tutarı giriniz:");
+                System.out.println("Enter the amount that you want to deposit: ");
 
-                double tutar = scanner.nextDouble();
+                amount = scanner.nextDouble();
 
-                account.paraCekme(tutar);
+                account.withdraw(amount);
 
             } else if (islem.equals("q")) {
 
@@ -73,7 +73,7 @@ public class Atm {
 
             } else {
 
-                System.out.println("Yanlıs islem girdiniz");
+                System.out.println("Wrong operation!");
             }
 
 
