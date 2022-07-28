@@ -1,4 +1,4 @@
-//Palindrome by using Stack method, this is an original solution
+//Palindrome by using Stack, this is an original solution
 
 import java.util.Scanner;
 import java.util.Stack;
