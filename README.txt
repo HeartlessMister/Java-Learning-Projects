@@ -677,5 +677,5 @@ Queue methods --> https://docs.oracle.com/javase/7/docs/api/java/util/Queue.html
 Exception hierarchy --> https://www.benchresources.net/wp-content/uploads/2017/02/exception-hierarchy-in-java.png
 Input/Output hierarchy --> https://www.roseindia.net/java/example/java/io/bytestreams.shtml
 Java Swing tutorial --> https://www.javatpoint.com/java-swing
-Java Spring tutorial --> https://spring.io/guides
+Java Spring tutorial --> https://spring.io/guides/
 
