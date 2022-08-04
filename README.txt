@@ -72,6 +72,8 @@ Methodoverloading: Two or more methods may have the same name if they differ in 
 
 Constructor: Special method to initialize objects, constructor is called when object is created.
 
+Copy Constructor:  Copy constructor is used to initialize the members of a newly created object by copying the members of an already existing object.
+
 Inheritance: Acquires the properties from one class to other classes.
 
 Override:  A feature that allows a subclass or child class to provide a specific implementation of a method that is already provided 
