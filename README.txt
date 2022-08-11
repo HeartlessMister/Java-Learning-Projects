@@ -44,7 +44,7 @@ Producer and Consumer ArrayBlockingQueue--> ArrayBlockingQueue
 
 Producer and Consumer WaitandNotify--> wait(), notifty()
 
-Space Game with GUI --> Swing (Has not finished yet)
+Space Game with GUI --> Swing
 ----------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------
